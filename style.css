@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #d1d1d19d;
-  --secondary--color: #e64a24;
-  --text-color: #8f410e;
+  --secondary--color: #50c6e4;
+  --text-color:black;
 }
 
 * {
@@ -15,10 +15,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: var(--primary-color);
-  color: #fff;
+  color: rgb(250, 250, 250);
   font-size: 18px;
   line-height: 1.6;
 }
+/* h1 {
+  color: rgb(253, 253, 253);
+  background-color: rgba(121, 96, 73, 0.404);
+} */
 
 h1,
 h2,
@@ -29,13 +33,49 @@ p {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(167, 3, 3);
 }
 
 ul {
   list-style: none;
 }
 
+.object1{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 15%;
+    left: 64%;
+    background: rgb(106, 106, 180);
+    border-radius: 50%;
+}
+.object2{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    background: rgb(30, 30, 116);
+    border-radius: 50%;
+}
+.object3{
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    top: 95%;
+    left: 74%;
+    background: rgb(67, 119, 112);
+    border-radius: 50%;
+}
+.object4{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 52%;
+    left: 74%;
+    background: rgb(68, 108, 145);
+    border-radius: 50%;
+}
 .btn {
   display: inline-block;
   border: 0;
@@ -58,7 +98,7 @@ ul {
 }
 
 .secondary-text {
-  color: rgb(134, 39, 39)
+  color: rgb(0, 0, 0);
 }
 
 .section {
@@ -68,8 +108,13 @@ ul {
 
 /* Section Top */
 .section-top {
-  min-height: 500px;
-  background: url("./coffee-1284041_1920.jpg") no-repeat center center/cover;
+  min-height: 660px;
+  background: url("https://images.unsplash.com/photo-1595014373150-c5fce3ac3629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1641&q=80")
+    no-repeat center center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-top h1 {
@@ -80,14 +125,29 @@ ul {
 .section-top .content {
   position: absolute;
   top: 100px;
-  right: 20px;
-  width: 55%;
+  right: 30px;
+  width: 35%;
 }
+
+/*section bottom*/
+.parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 /* Section Stream */
 .section-stream {
-  min-height: 700px;
-  background: url("./bg-2.png") no-repeat center center/cover;
+  min-height: 1000px;
+  background: url("./test2.png") no-repeat center center/cover;
 }
 
 .section-stream h2 {
@@ -98,7 +158,7 @@ ul {
   width: 27%;
   position: absolute;
   top: 100px;
-  left: 80px;
+  left: 90px;
 }
 
 .section-stream .content {
@@ -110,7 +170,7 @@ ul {
 
 .section-stream .content > div,
 .section-grid > div {
-  background: #e64a24;
+  background: #50c6e4;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -144,12 +204,13 @@ ul {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  background-color: black;
 }
 
 /* Mobile */
 @media (max-width: 700px) {
   .section-top .content,
-  .section-stream .play,
+  .section-stream .logo,
   .section-stream .content {
     position: static;
     width: 100%;
@@ -172,15 +233,16 @@ ul {
     min-height: 400px;
   }
 
-  .section-stream .play {
+  .section-stream .logo {
     width: 50%;
     display: block;
     margin: 30px auto;
   }
 
+
   .section-grid {
     display: block;
-    margin-top: 0;
+    margin-top: 1px;
   }
 
   .footer ul {
