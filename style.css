@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 :root {
-  --primary-color: #533417;
-  --secondary--color: #ce3f3f;
-  --text-color: #c79e92;
+  --primary-color: #d1d1d19d;
+  --secondary--color: #e64a24;
+  --text-color: #8f410e;
 }
 
 * {
@@ -50,7 +50,7 @@ ul {
 }
 
 .btn:hover {
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 
 .primary-text {
@@ -58,7 +58,7 @@ ul {
 }
 
 .secondary-text {
-  color: var(--secondary--color);
+  color: rgb(134, 39, 39)
 }
 
 .section {
@@ -87,18 +87,18 @@ ul {
 /* Section Stream */
 .section-stream {
   min-height: 700px;
-  background: url("./coffee-1284041_1920.jpg") no-repeat center center/cover;
+  background: url("./bg-2.png") no-repeat center center/cover;
 }
 
 .section-stream h2 {
   font-size: 35px;
 }
 
-.section-stream .play {
+.section-stream .logo {
   width: 27%;
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 80px;
 }
 
 .section-stream .content {
@@ -110,7 +110,7 @@ ul {
 
 .section-stream .content > div,
 .section-grid > div {
-  background: rgba(255, 255, 255, 0.1);
+  background: #e64a24;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -130,7 +130,6 @@ ul {
 
 .section-grid .dot {
   font-size: 40px;
-  padding-left: 2px;
 }
 
 /* Footer */
